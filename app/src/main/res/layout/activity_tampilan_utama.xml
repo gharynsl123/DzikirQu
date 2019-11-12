@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TampilanUtama">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivBg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/shadowview" />
+
+        <ImageView
+            android:id="@+id/ivCalender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/tanggal" />
+
+        <TextView
+            android:id="@+id/tvCalender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/ivCalender"
+            android:text="17 Sep 2019"
+            android:textColor="#FFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/transparant"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ivJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_access_time_black_24dp" />
+
+            <TextClock
+                android:id="@+id/tvJam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toLeftOf="@id/ivJam"
+                android:format12Hour="hh : mm a"
+                android:text="14 : 00"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivUser"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/ivCalender"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ikhwan" />
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:layout_toRightOf="@id/ivUser"
+            android:text="Hallo, "
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="52dp"
+            android:layout_toRightOf="@id/tvUser"
+            android:text="Tamu"
+            android:textColor="#FFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tvHari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUser"
+            android:layout_toRightOf="@id/ivUser"
+            android:text="Siang"
+            android:textColor="#FFF" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp"
+            app:cardCornerRadius="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#11999B9D">
+
+                <LinearLayout
+                    android:id="@+id/llMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Dzikir Yuk"
+                        android:textColor="#65F356"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="2sp"
+                    android:layout_below="@id/llMain"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="#000" />
+
+
+                <!--RalativeLayout 1-->
+                <RelativeLayout
+                    android:id="@+id/rlMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lines"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <!--Button 1-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/Pagi"
+                        android:layout_width="125dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="13dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparantlagi"
+                            android:onClick="pagi"
+                            android:padding="2dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ivPagi"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/pagi" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ivPagi"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center"
+                                android:text="Dzikir Pagi"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <!--Button 2-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/Petang"
+                        android:layout_width="125dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_toRightOf="@id/Pagi"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparantlagi"
+                            android:onClick="sore"
+                            android:padding="2dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ivPetang"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/petang" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ivPetang"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center"
+                                android:text="Dzikir Petang"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                    <!--Button 3-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/setelahSholat"
+                        android:layout_width="125dp"
+                        android:layout_height="100dp"
+                        android:layout_toRightOf="@id/Petang"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparantlagi"
+                            android:onClick="setelahSholat"
+                            android:padding="2dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ivSetelahSholat"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:src="@drawable/sholatl" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ivSetelahSholat"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Setelah Sholat"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <!--RealativeLayout 2-->
+                <RelativeLayout
+                    android:id="@+id/rlMain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlMain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <!--Button 4-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/doaHarian"
+                        android:layout_width="125dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="15dp"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparantlagi"
+                            android:onClick="harian"
+                            android:padding="2dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ivDoaHarian"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/doalain" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ivDoaHarian"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center"
+                                android:text="Doa Harian"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--Button 5-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/dzikirLain"
+                        android:layout_width="125dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_toRightOf="@id/doaHarian"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparantlagi"
+                            android:onClick="lainnya"
+                            android:padding="2dp">
+
+                            <ImageView
+                                android:id="@+id/ivLain"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/doa" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ivLain"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center"
+                                android:text="Dzikir Lain"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <!--Button 6-->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/Pengaturan"
+                        android:layout_width="125dp"
+                        android:layout_height="100dp"
+                        android:layout_toRightOf="@id/dzikirLain"
+                        android:padding="10dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/transparantlagi"
+                            android:onClick="pengaturan"
+                            android:padding="2dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/ivPengaturan"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/ic_settings_black_24dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ivPengaturan"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center"
+                                android:text="Pengaturan"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gharin.dzikirqu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:color/holo_blue_light"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/lable"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DetailHarian"></activity>
+        <activity android:name=".SetAcount" />
+        <activity android:name=".Takbir">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SetelahSholat" />
+        </activity>
+        <activity android:name=".Tahmid" />
+        <activity android:name=".Pengaturan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanUtama" />
+        </activity>
+        <activity android:name=".Tasbih">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SetelahSholat" />
+        </activity>
+        <activity android:name=".Tentang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanUtama" />
+        </activity>
+        <activity android:name=".DzikirLain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanUtama" />
+        </activity>
+        <activity android:name=".DoaHarian">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanUtama" />
+        </activity>
+        <activity android:name=".SetelahSholat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanUtama" />
+        </activity>
+        <activity android:name=".Petang">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanUtama" />
+        </activity>
+        <activity android:name=".Pagi">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TampilanUtama" />
+        </activity>
+        <activity android:name=".TampilanUtama" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

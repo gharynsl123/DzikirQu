@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DzikirQu</string>
+    <string name="dzikir_pagi">Dzikir Pagi</string>
+    <string name="dzikir_petang">Dzikir Petang</string>
+    <string name="dzikir_setelah_sholat">Dzikir Setelah Sholat</string>
+    <string name="doaharian">Doa Harian</string>
+    <string name="tentang">Tentang</string>
+    <string name="cari_dizikir_lain">Cari Dizikir dan Doa Lain</string>
+    <string name="tasbih">Tasbih</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="DzikirLain">Dzikir Lainnya</string>
+    <string name="aggre">Dengan ini saya menyutujui kebijakan dan privasi</string>
+    <string name="text">DzikirQU</string>
+    <string name="succesRegister">Berhasil mendaftar</string>
+    <string name="cautionSuscces">Silahkan Login</string>
+    <string name="acountNotRegist">Akun Tidak Terdaftar!</string>
+    <string name="pleaseRegister">Silahkan Register Terlebih Dahulu</string>
+    <string name="Pagi">Selamat Pagi</string>
+    <string name="siang">Selamat Siang</string>
+    <string name="Sore">Selamat Sore</string>
+    <string name="Malam">Selamat Malam</string>
+</resources>
